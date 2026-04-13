@@ -47,6 +47,13 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        node: {
+          root: "hsl(var(--node-root))",
+          branch: "hsl(var(--node-branch))",
+          leaf: "hsl(var(--node-leaf))",
+          detail: "hsl(var(--node-detail))",
+          hover: "hsl(var(--node-hover))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
