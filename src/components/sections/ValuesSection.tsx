@@ -4,7 +4,7 @@ const ValuesSection = () => (
   <SectionWrapper
     id="gia-tri"
     title="Đảng là đạo đức, là văn minh"
-    subtitle="\"Đảng ta là đạo đức, là văn minh.\" (1960)"
+    subtitle={'"Đảng ta là đạo đức, là văn minh." (1960)'}
     variant="muted"
   >
     <div className="grid md:grid-cols-2 gap-6">

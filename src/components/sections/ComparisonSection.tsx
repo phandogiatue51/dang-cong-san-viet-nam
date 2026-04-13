@@ -27,7 +27,7 @@ const ComparisonSection = () => (
   <SectionWrapper
     id="phan-biet"
     title="Phân biệt Đảng chân chính và Đảng thoái hóa"
-    subtitle="\"Một dân tộc, một đảng… không nhất định hôm nay và ngày mai vẫn được mọi người yêu mến nếu lòng dạ không trong sáng.\""
+    subtitle={'"Một dân tộc, một đảng… không nhất định hôm nay và ngày mai vẫn được mọi người yêu mến nếu lòng dạ không trong sáng."'}
   >
     <div className="overflow-x-auto">
       <table className="w-full border-collapse">

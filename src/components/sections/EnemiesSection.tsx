@@ -24,7 +24,7 @@ const enemies = [
 const EnemiesSection = () => (
   <SectionWrapper
     id="noi-xam"
-    title="Nhận diện \"giặc nội xâm\""
+    title={'Nhận diện "giặc nội xâm"'}
     variant="muted"
   >
     <blockquote className="border-l-4 border-primary pl-4 py-2 italic text-muted-foreground mb-8">

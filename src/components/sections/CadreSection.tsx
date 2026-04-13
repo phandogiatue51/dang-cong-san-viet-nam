@@ -4,7 +4,7 @@ const CadreSection = () => (
   <SectionWrapper
     id="can-bo"
     title="Xây dựng đội ngũ cán bộ, đảng viên"
-    subtitle="\"Cán bộ là cái gốc của mọi công việc. Muốn việc thành công hay thất bại đều do cán bộ tốt hay kém.\""
+    subtitle={'"Cán bộ là cái gốc của mọi công việc. Muốn việc thành công hay thất bại đều do cán bộ tốt hay kém."'}
   >
     <div className="grid md:grid-cols-2 gap-6">
       {/* Vừa Hồng */}
