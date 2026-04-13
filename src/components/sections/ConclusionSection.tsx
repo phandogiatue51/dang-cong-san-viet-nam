@@ -9,7 +9,7 @@ const ConclusionSection = () => (
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8">Tổng luận</h2>
+        <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8">Tổng kết</h2>
 
         <div className="grid grid-cols-2 md:grid-cols-5 gap-3 mb-8">
           {[

@@ -24,8 +24,8 @@ const Index = () => {
       <CadreSection />
       <EnemiesSection />
       <PartyPeopleSection />
-      <ConclusionSection />
       <MindMapSection />
+      <ConclusionSection />
     </div>
   );
 };
