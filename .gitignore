@@ -24,3 +24,6 @@ dist-ssr
 *.sw?
 
 .github/prompts/ui-ux-pro-max/
+.env
+.vercel
+.env*.local

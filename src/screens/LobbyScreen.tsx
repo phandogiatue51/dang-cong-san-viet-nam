@@ -28,7 +28,7 @@ const LobbyScreen = () => {
                 <section className="rounded-[32px] border border-white/10 bg-white/5 p-8 shadow-[0_35px_75px_-30px_rgba(15,23,42,0.8)] backdrop-blur-xl">
                     <div className="flex flex-col items-center gap-6 text-center md:flex-row md:justify-between md:text-left">
                         <div>
-                            <p className="text-sm uppercase tracking-[0.35em] text-[#F59E0B]">Con thuyền chung</p>
+                            <p className="text-sm uppercase tracking-[0.35em] text-[#F59E0B]">Thuyền Kách Mệnh</p>
                             <h1 className="mt-4 text-5xl font-semibold text-white">Chào mừng đến với bão biển</h1>
                             <p className="mt-3 max-w-2xl text-slate-300">Chuẩn bị con thuyền cùng dân tộc vượt qua sóng gió, bảo vệ niềm tin và chống lại tham nhũng.</p>
                             <button

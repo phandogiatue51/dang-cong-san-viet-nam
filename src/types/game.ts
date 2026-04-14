@@ -16,6 +16,8 @@ export interface Player {
     name: string;
     role?: string;
     score: number;
+    correctCount: number;
+    corruptCount: number;
     isReady: boolean;
 }
 
@@ -68,6 +70,8 @@ export interface GameStats {
 export interface PlayerPerformance {
     corruptCount: number;
     correctCount: number;
+    merit: number;
+    score: number;
 }
 
 export interface GameHistoryItem {
@@ -92,4 +96,13 @@ export interface GameState {
     stats: GameStats;
     playerPerformance: Record<string, PlayerPerformance>;
     history: GameHistoryItem[];
+    showingResult: boolean;
+    lastResult?: {
+        winner: string | null;
+        effect: any;
+        type: string;
+        correctAnswerText?: string;
+        votedOption?: string | null;
+        votedOptionText?: string | null;
+    };
 }

@@ -4,27 +4,27 @@ export const milestoneQuestions: MilestoneQuestion[] = [
     {
         year: 1930,
         event: "Thành lập Đảng Cộng sản Việt Nam",
-        question: "Con thuyền cách mạng vừa ra khơi. Chọn hướng đi nào?",
+        question: "Đảng vừa thành lập, cần chọn hướng đi nào?",
         options: [
             {
-                text: "Đi nhanh, vượt trước",
+                text: "Chạy theo phong trào, không có chiến lược rõ ràng",
                 effect: { hp: -10, purity: -5 },
-                type: "temptation"
+                type: "wrong"
             },
             {
-                text: "Đi chậm chắc, xây móng vững",
+                text: "Xây dựng nền tảng lý luận vững chắc, tổ chức chặt chẽ",
                 effect: { hp: 15, purity: 10 },
                 type: "correct"
             },
             {
-                text: "Chờ xem hướng gió",
-                effect: { hp: 0, purity: 0 },
-                type: "neutral"
+                text: "Dựa dẫm vào sự giúp đỡ từ bên ngoài",
+                effect: { hp: -15, purity: -10 },
+                type: "corrupt"
             },
             {
-                text: "Hợp tác với thế lực bên ngoài",
-                effect: { hp: -25, purity: -15 },
-                type: "corrupt"
+                text: "Hoạt động bí mật, tránh tiếp xúc quần chúng",
+                effect: { hp: -20, purity: -8 },
+                type: "wrong"
             }
         ],
         correctAnswer: "B",
@@ -35,7 +35,7 @@ export const milestoneQuestions: MilestoneQuestion[] = [
     {
         year: 1945,
         event: "Cách mạng Tháng Tám thành công",
-        question: "Giành chính quyền rồi, việc đầu tiên cần làm?",
+        question: "Cách mạng Tháng Tám thành công, việc đầu tiên cần làm là gì?",
         options: [
             {
                 text: "Tập trung củng cố quyền lực",
@@ -143,7 +143,7 @@ export const milestoneQuestions: MilestoneQuestion[] = [
     {
         year: 2001,
         event: "Đại hội IX - Đổi mới toàn diện",
-        question: "Mở cửa kinh tế, nhưng có tệ nạn tham nhũng. Chọn?",
+        question: "Mở cửa kinh tế, nhưng nảy sinh tham nhũng. Chọn hướng xử lý nào?",
         options: [
             {
                 text: "Mở cửa bằng mọi giá",
@@ -173,8 +173,8 @@ export const milestoneQuestions: MilestoneQuestion[] = [
     },
     {
         year: 2026,
-        event: "Kỷ niệm 96 năm Đảng - VỀ ĐÍCH",
-        question: "Nhìn lại chặng đường, bài học quan trọng nhất là?",
+        event: "Kỷ niệm 96 năm thành lập Đảng cộng sản Việt Nam",
+        question: "Nhìn lại chặng đường 96 năm thành lập Đảng cộng sản Việt Nam, bài học quan trọng nhất là?",
         options: [
             {
                 text: "Phát triển kinh tế là trên hết",

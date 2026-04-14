@@ -16,7 +16,7 @@ const EndingScreen = () => {
         }
     }, [gameState.currentScreen, navigate]);
 
-    const { hp, purity, stats, players, playerPerformance } = gameState;
+    const { hp, purity, stats, players } = gameState;
 
     const getEnding = (hp: number, purity: number) => {
         if (hp <= 0) {
@@ -42,21 +42,15 @@ const EndingScreen = () => {
 
     const ending = getEnding(hp, purity);
 
-    // Get top players
-    const sortedPlayers = [...players].map(p => ({
-        ...p,
-        perf: playerPerformance[p.id] || { corruptCount: 0, correctCount: 0 }
-    }));
+    const topGood = [...players]
+        .filter(p => p.correctCount > 0 && p.corruptCount === 0)
+        .sort((a, b) => b.correctCount - a.correctCount)
+        .slice(0, 5);
 
-    const topGood = [...sortedPlayers]
-        .filter(p => p.perf.correctCount > 0)
-        .sort((a, b) => b.perf.correctCount - a.perf.correctCount)
-        .slice(0, 3);
-
-    const topCorrupt = [...sortedPlayers]
-        .filter(p => p.perf.corruptCount > 0)
-        .sort((a, b) => b.perf.corruptCount - a.perf.corruptCount)
-        .slice(0, 3);
+    const topCorrupt = [...players]
+        .filter(p => p.corruptCount > 0)
+        .sort((a, b) => b.corruptCount - a.corruptCount)
+        .slice(0, 5);
 
     return (
         <main className="relative min-h-screen overflow-hidden bg-[#0F172A] text-white px-4 py-10 dark font-sans">
@@ -196,7 +190,7 @@ const EndingScreen = () => {
                                             <span className="flex h-6 w-6 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-400 text-xs">{i + 1}</span>
                                             {p.name}
                                         </span>
-                                        <span className="text-emerald-400 font-black text-sm">{p.perf.correctCount} câu đúng</span>
+                                        <span className="text-emerald-400 font-black text-sm">{p.correctCount} câu đúng · {p.score}đ</span>
                                     </div>
                                 ))}
                         </div>
@@ -214,7 +208,7 @@ const EndingScreen = () => {
                                             <span className="flex h-6 w-6 items-center justify-center rounded-full bg-rose-500/20 text-rose-400 text-xs">{i + 1}</span>
                                             {p.name}
                                         </span>
-                                        <span className="text-rose-400 font-black text-sm">{p.perf.corruptCount} lần tham ô</span>
+                                        <span className="text-rose-400 font-black text-sm">{p.corruptCount} lần tham ô · {p.score}đ</span>
                                     </div>
                                 ))}
                         </div>
