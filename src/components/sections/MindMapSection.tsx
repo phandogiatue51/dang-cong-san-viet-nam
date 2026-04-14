@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { mindMapData } from "@/data/mindMapData";
-import { ChevronRight, Quote } from "lucide-react";
+import { mindMapData, type MindMapNode } from "@/data/mindMapData";
+import { ChevronRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import SectionWrapper from "./SectionWrapper";
 
@@ -37,7 +37,7 @@ const MindMapSection = () => {
 };
 
 // Component cho từng mục con (có thể click để xem chi tiết)
-const BranchItem = ({ node }: { node: any }) => {
+const BranchItem = ({ node }: { node: MindMapNode }) => {
   const [expanded, setExpanded] = useState(false);
   const hasDetails = node.quote || (node.children && node.children.length > 0);
 
@@ -88,7 +88,7 @@ const BranchItem = ({ node }: { node: any }) => {
             {/* Children sâu hơn nếu có */}
             {node.children && node.children.length > 0 && (
               <div className="space-y-2">
-                {node.children.map((child: any) => (
+                {node.children.map((child) => (
                   <BranchItem key={child.id} node={child} />
                 ))}
               </div>

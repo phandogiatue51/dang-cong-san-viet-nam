@@ -24,12 +24,60 @@ const enemies = [
 const EnemiesSection = () => (
   <SectionWrapper
     id="noi-xam"
-    title={'Nhận diện "giặc nội xâm"'}
+    title={'Nhận diện "Kẻ thù nội xâm"'}
+    subtitle="Chống tham ô, lãng phí, quan liêu và bệnh mẹ chủ nghĩa cá nhân là điều kiện sống còn của công cuộc chỉnh đốn."
     variant="muted"
   >
-    <blockquote className="border-l-4 border-primary pl-4 py-2 italic text-muted-foreground mb-8">
+    <blockquote className="border-l-4 border-destructive pl-4 py-2 italic text-muted-foreground mb-8">
       "Mỗi kẻ địch bên trong là một bạn đồng minh của kẻ địch bên ngoài... Địch bên trong đáng sợ hơn, vì nó phá hoại từ trong phá ra."
     </blockquote>
+
+    <div className="rounded-2xl border border-red-700/55 bg-[linear-gradient(135deg,rgba(15,15,15,0.97),rgba(85,12,17,0.95))] p-6 md:p-8 mb-7 shadow-[0_24px_60px_rgba(80,10,15,0.35)]">
+      <div className="flex items-start gap-3 mb-5">
+        <div className="w-10 h-10 rounded-full bg-red-600/25 border border-red-500/40 flex items-center justify-center shrink-0">
+          <AlertTriangle className="text-red-300" size={20} />
+        </div>
+        <div>
+          <h4 className="text-red-100 font-bold text-lg">Khu vực cảnh báo nội xâm</h4>
+          <p className="text-red-100/85 text-sm mt-1">
+            Những biểu hiện này âm thầm phá hủy tổ chức từ bên trong và nguy hiểm hơn giặc ngoại xâm.
+          </p>
+        </div>
+      </div>
+
+      <div className="flex flex-wrap gap-2 mb-5">
+        {[
+          "Tham ô",
+          "Lãng phí",
+          "Quan liêu",
+          "Bệnh mẹ - Chủ nghĩa cá nhân",
+        ].map((tag) => (
+          <span
+            key={tag}
+            className="rounded-full bg-red-700/70 border border-red-300/35 px-3 py-1.5 text-sm text-red-50 font-medium"
+          >
+            {tag}
+          </span>
+        ))}
+      </div>
+
+      <div className="grid md:grid-cols-2 gap-4">
+        <div className="rounded-xl border border-red-400/35 bg-black/25 p-4">
+          <h5 className="text-red-100 font-semibold mb-2">Biểu hiện thường gặp</h5>
+          <ul className="space-y-2 text-sm text-red-50/90">
+            <li>• Đặt quyền lợi cá nhân lên trên tập thể.</li>
+            <li>• Né tránh tự phê bình, ngại sửa sai.</li>
+            <li>• Xa rời nhân dân, hành chính hóa lãnh đạo.</li>
+          </ul>
+        </div>
+        <div className="rounded-xl border border-red-400/35 bg-black/25 p-4">
+          <h5 className="text-red-100 font-semibold mb-2">Yêu cầu chỉnh đốn</h5>
+          <p className="text-sm text-red-50/90 leading-relaxed">
+            Đảng phải thường xuyên tự chỉnh đốn, nhất là sau những thắng lợi lớn, để loại bỏ phần tử hủ hóa và ngăn ngừa tự mãn, tự kiêu, thoái hóa.
+          </p>
+        </div>
+      </div>
+    </div>
 
     <div className="grid md:grid-cols-2 gap-4">
       {enemies.map((e, i) => (

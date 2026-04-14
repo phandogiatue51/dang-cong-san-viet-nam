@@ -39,10 +39,12 @@ const HeroSection = () => (
             />
           </div>
         </div>
-        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-4">
-          Tư tưởng Hồ Chí Minh 
+        <h1 className="text-3xl md:text-5xl font-bold text-primary-foreground mb-4">
+          <span >Tư tưởng Hồ Chí Minh</span> 
           <br />
-          <span>về Đảng Cộng sản Việt Nam</span>
+          <span >
+            về Đảng Cộng sản Việt Nam
+          </span>
         </h1>
         <p className="text-primary-foreground/70 text-lg md:text-xl mt-6 max-w-xl mx-auto">
           Người cầm lái, Con thuyền và Đại dương

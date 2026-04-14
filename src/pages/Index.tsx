@@ -22,19 +22,19 @@ const Index = () => {
       <WaveDivider />
       <ValuesSection />
       <WaveDivider />
-      <ComparisonSection />
+      {/* <ComparisonSection /> */}
       <WaveDivider />
       <PrinciplesSection />
       <WaveDivider />
-      <UnitySection />
+      {/* <UnitySection /> */}
       <WaveDivider />
+      <PartyPeopleSection />
       <CadreSection />
       <WaveDivider />
       <EnemiesSection />
       <WaveDivider />
-      <PartyPeopleSection />
       <WaveDivider />
-      <MindMapSection />
+      {/* <MindMapSection /> */}
       <WaveDivider />
       <ConclusionSection />
     </div>
