@@ -7,7 +7,7 @@ export interface MindMapNode {
 
 export const mindMapData: MindMapNode = {
   id: "root",
-  label: "Tư tưởng Hồ Chí Minh về Đảng Cộng sản Việt Nam",
+  label: "",
   children: [
     {
       id: "1",

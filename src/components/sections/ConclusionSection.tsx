@@ -35,10 +35,26 @@ const ConclusionSection = () => (
 
         {/* Final quote */}
         <div className="bg-primary rounded-xl p-8 text-center">
-          <blockquote className="text-primary-foreground text-lg md:text-xl italic font-medium max-w-lg mx-auto leading-relaxed">
+          {/* Ảnh Bác Hồ */}
+          <div className="flex justify-center mb-6">
+            <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-secondary/30 flex items-center justify-center overflow-hidden">
+              <img
+                src="/images/hochiminh.png"
+                alt="Hồ Chí Minh"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
+          {/* Quote */}
+          <blockquote className="text-primary-foreground text-lg md:text-xl italic font-medium max-w-2xl mx-auto leading-relaxed">
             "Một Đảng cách mạng chân chính... là Đảng tiêu biểu cho lương tâm, trí tuệ và danh dự của dân tộc."
           </blockquote>
-          <p className="text-primary-foreground/60 text-sm mt-4">— Hồ Chí Minh</p>
+
+          {/* Tác giả */}
+          <p className="text-primary-foreground/60 text-sm mt-4">
+            — Hồ Chí Minh
+          </p>
         </div>
       </motion.div>
     </div>

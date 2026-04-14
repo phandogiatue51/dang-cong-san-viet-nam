@@ -12,7 +12,7 @@ interface Props {
 const SectionWrapper = ({ id, title, subtitle, children, variant = "default" }: Props) => (
   <section
     id={id}
-    className={`py-16 md:py-24 ${variant === "muted" ? "bg-muted/30" : ""}`}
+    className={`py-16 md:py-24 rounded-2xl mx-4 my-8 ${variant === "muted" ? "bg-muted/30" : "bg-card/10"} border border-border/30 shadow-sm`}
   >
     <div className="max-w-4xl mx-auto px-6">
       <motion.div

@@ -1,55 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Source+Serif+Pro:wght@400;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Source+Sans+3:wght@300;400;500;600;700&display=swap');
-
 @layer base {
   :root {
-    --background: 40 30% 97%;
-    --foreground: 20 20% 15%;
+    /* Old paper background */
+    --background: 45 30% 93%;
+    --foreground: 190 43% 15%;
 
-    --card: 40 25% 95%;
-    --card-foreground: 20 20% 15%;
+    --card: 45 25% 90%;
+    --card-foreground: 190 43% 15%;
 
-    --popover: 40 25% 95%;
-    --popover-foreground: 20 20% 15%;
+    --popover: 45 25% 90%;
+    --popover-foreground: 190 43% 15%;
 
-    --primary: 0 72% 42%;
-    --primary-foreground: 40 30% 97%;
+    /* Deep water blue primary */
+    --primary: 190 43% 25%;
+    --primary-foreground: 45 30% 95%;
 
-    --secondary: 38 65% 52%;
-    --secondary-foreground: 20 20% 10%;
+    /* Secondary: lighter blue or complementary */
+    --secondary: 190 30% 40%;
+    --secondary-foreground: 45 30% 95%;
 
-    --muted: 35 20% 90%;
-    --muted-foreground: 20 10% 45%;
+    /* Accent: perhaps a warmer tone for biophilic */
+    --accent: 25 45% 50%;
+    --accent-foreground: 45 30% 95%;
 
-    --accent: 38 65% 52%;
-    --accent-foreground: 20 20% 10%;
+    --muted: 45 15% 85%;
+    --muted-foreground: 190 20% 30%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 45 30% 95%;
 
-    --border: 30 15% 85%;
-    --input: 30 15% 85%;
-    --ring: 0 72% 42%;
+    --border: 45 20% 80%;
+    --input: 45 20% 80%;
+    --ring: 190 43% 25%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
-    --node-root: 0 72% 42%;
-    --node-branch: 38 65% 52%;
-    --node-leaf: 25 40% 48%;
-    --node-detail: 20 25% 55%;
-    --node-hover: 0 72% 48%;
+    /* Mind map nodes */
+    --node-root: 190 43% 25%;
+    --node-branch: 190 30% 40%;
+    --node-leaf: 45 20% 70%;
+    --node-detail: 45 15% 80%;
+    --node-hover: 190 50% 30%;
+  }
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+  .dark {
+    /* Nếu muốn dark mode riêng cho thuyền đêm */
+    --background: 200 15% 12%;
+    --foreground: 40 20% 88%;
+    --card: 200 15% 15%;
+    --card-foreground: 40 20% 88%;
+    --primary: 0 55% 45%;
+    --secondary: 25 45% 50%;
+    --accent: 195 50% 40%;
   }
 }
 
@@ -60,10 +67,63 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Source Sans 3', sans-serif;
+    font-family: 'Source Serif Pro', serif;
+    background-color: #F4EFE6;
+    background-image: radial-gradient(circle at 20% 80%, rgba(44, 95, 107, 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(244, 239, 230, 0.1) 0%, transparent 50%);
+    background-size: 200px 200px, 150px 150px;
   }
 
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: 'Playfair Display', serif;
+    font-weight: 700;
   }
+}
+
+/* Hiệu ứng gợn sóng khi hover (tuỳ chọn) */
+.wave-ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.wave-ripple::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(44, 95, 107, 0.15);
+  transform: translate(-50%, -50%);
+  transition: width 0.4s ease, height 0.4s ease;
+}
+
+.wave-ripple:hover::after {
+  width: 300px;
+  height: 300px;
+}
+
+/* Thanh cuộn theo phong cách cổ điển */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #D7C8B6;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2C5F6B;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B86B2C;
 }

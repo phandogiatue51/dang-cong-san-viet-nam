@@ -10,21 +10,32 @@ import UnitySection from "@/components/sections/UnitySection";
 import ConclusionSection from "@/components/sections/ConclusionSection";
 import MindMapSection from "@/components/sections/MindMapSection";
 import NavBar from "@/components/NavBar";
+import WaveDivider from "@/components/WaveDivider";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <NavBar />
       <HeroSection />
+      <WaveDivider />
       <OriginSection />
+      <WaveDivider />
       <ValuesSection />
+      <WaveDivider />
       <ComparisonSection />
+      <WaveDivider />
       <PrinciplesSection />
+      <WaveDivider />
       <UnitySection />
+      <WaveDivider />
       <CadreSection />
+      <WaveDivider />
       <EnemiesSection />
+      <WaveDivider />
       <PartyPeopleSection />
+      <WaveDivider />
       <MindMapSection />
+      <WaveDivider />
       <ConclusionSection />
     </div>
   );

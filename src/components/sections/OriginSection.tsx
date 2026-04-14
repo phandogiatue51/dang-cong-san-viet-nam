@@ -38,9 +38,15 @@ const OriginSection = () => (
             </motion.div>
           ))}
         </div>
-        <p className="text-center text-sm text-muted-foreground mt-4 italic">
-          → Sự ra đời tất yếu của Đảng Cộng sản Việt Nam (1930)
-        </p>
+        <div className="flex justify-center mt-10 border shadow-sm rounded-3xl bg-card">
+          <div className="w-86 h-86 flex items-center justify-center p-6">
+            <img
+              src="/images/partyestablishment.png"
+              alt="Đảng Cộng sản Việt Nam thành lập"
+              className="w-full h-full object-contain rounded-3xl"
+            />
+          </div>
+        </div>
       </div>
     </div>
   </SectionWrapper>
