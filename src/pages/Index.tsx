@@ -1,3 +1,4 @@
+import "./../index.css";
 import HeroSection from "@/components/sections/HeroSection";
 import OriginSection from "@/components/sections/OriginSection";
 import ValuesSection from "@/components/sections/ValuesSection";

@@ -127,3 +127,82 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #B86B2C;
 }
+
+.dark {
+  /* Nếu muốn dark mode riêng cho thuyền đêm */
+  --background: 200 15% 12%;
+  --foreground: 40 20% 88%;
+  --card: 200 15% 15%;
+  --card-foreground: 40 20% 88%;
+  --primary: 0 55% 45%;
+  --secondary: 25 45% 50%;
+  --accent: 195 50% 40%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Source Serif Pro', serif;
+    background-color: #F4EFE6;
+    background-image: radial-gradient(circle at 20% 80%, rgba(44, 95, 107, 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(244, 239, 230, 0.1) 0%, transparent 50%);
+    background-size: 200px 200px, 150px 150px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+  }
+}
+
+/* Hiệu ứng gợn sóng khi hover (tuỳ chọn) */
+.wave-ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.wave-ripple::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(44, 95, 107, 0.15);
+  transform: translate(-50%, -50%);
+  transition: width 0.4s ease, height 0.4s ease;
+}
+
+.wave-ripple:hover::after {
+  width: 300px;
+  height: 300px;
+}
+
+/* Thanh cuộn theo phong cách cổ điển */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #D7C8B6;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2C5F6B;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B86B2C;
+}
