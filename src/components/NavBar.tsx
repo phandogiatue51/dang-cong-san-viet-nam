@@ -8,6 +8,7 @@ const navItems = [
   { href: "#nguyen-tac", label: "Nguyên tắc" },
   { href: "#can-bo", label: "Cán bộ" },
   { href: "#dang-dan", label: "Đảng–Dân" },
+  { href: "https://hcm-202-beta.vercel.app/", label: "Mini Game" },
 ];
 
 const NavBar = () => {
