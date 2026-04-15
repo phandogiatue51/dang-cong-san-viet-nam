@@ -15,7 +15,7 @@ const PartyPeopleSection = () => (
 
       <div className="relative rounded-2xl overflow-hidden border border-border">
         <img
-          src="/images/party-people-unity.svg"
+          src="/images/bachovabodoi2.png"
           alt="Đảng gắn bó với nhân dân"
           className="w-full h-56 md:h-72 object-cover"
         />

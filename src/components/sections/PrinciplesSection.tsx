@@ -96,9 +96,9 @@ const PrinciplesSection = () => (
   >
     <div className="relative overflow-hidden rounded-2xl border border-border bg-card mb-6">
       <img
-        src="/images/principles-structure.svg"
+        src="/images/bachovabodoi.png"
         alt="Biểu tượng định hướng tổ chức"
-        className="w-full h-48 md:h-56 object-cover"
+        className="w-full h-86 md:h-56 object-cover"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-primary/75 via-primary/45 to-transparent" />
       <div className="absolute bottom-4 left-4 right-4 flex flex-wrap gap-2">
