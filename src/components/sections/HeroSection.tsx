@@ -47,7 +47,7 @@ const HeroSection = () => (
           </span>
         </h1>
         <p className="text-primary-foreground/70 text-lg md:text-xl mt-6 max-w-xl mx-auto">
-          Người cầm lái, Con thuyền và Đại dương
+          Nguyên tắc, Lãnh đạo và Đạo đức
         </p>
       </motion.div>
     </div>
