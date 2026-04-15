@@ -2,8 +2,11 @@ import { motion } from "framer-motion";
 import SectionWrapper from "./SectionWrapper";
 
 const OriginSection = () => (
-  <SectionWrapper id="nguon-goc" title="Người cầm lái có vững, thuyền mới chạy">
+  <SectionWrapper id="nguon-goc" title="I. Tính tất yếu và Vai trò của Đảng Cộng sản Việt Nam">
     <div className="space-y-8">
+      <h3 className="text-xl font-semibold text-foreground">
+         Người cầm lái có vững, thuyền mới chạy
+      </h3>
       <blockquote className="border-l-4 border-secondary pl-4 py-2 italic text-muted-foreground text-lg">
         "Cách mệnh trước hết phải có đảng cách mệnh... Đảng phải vững mạnh thì cách mệnh mới thành công, cũng như người cầm lái có vững thuyền mới chạy."
         <footer className="text-sm mt-2 not-italic font-medium">— Đường cách mệnh (1927)</footer>

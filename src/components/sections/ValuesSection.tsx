@@ -3,13 +3,20 @@ import SectionWrapper from "./SectionWrapper";
 const ValuesSection = () => (
   <SectionWrapper
     id="gia-tri"
-    title="Đảng là đạo đức, là văn minh"
+    title='II. Đảng là "Đạo đức, là Văn minh"'
     subtitle={'"Đảng ta là đạo đức, là văn minh." (1960)'}
     variant="muted"
   >
     <div className="grid md:grid-cols-2 gap-6">
       {/* Đạo đức */}
       <div className="bg-card rounded-xl p-6 border border-border shadow-sm">
+        <div className="mb-4 rounded-xl overflow-hidden border border-border h-36">
+          <img
+            src="/images/values-ethics.svg"
+            alt="Tinh thần phụng sự"
+            className="w-full h-full object-cover"
+          />
+        </div>
         <h3 className="text-xl font-bold text-primary mb-4">Đạo đức</h3>
         <ul className="space-y-3">
           <li className="flex gap-3">
@@ -38,6 +45,13 @@ const ValuesSection = () => (
 
       {/* Văn minh */}
       <div className="bg-card rounded-xl p-6 border border-border shadow-sm">
+        <div className="mb-4 rounded-xl overflow-hidden border border-border h-36">
+          <img
+            src="/images/values-civilization.svg"
+            alt="Giá trị văn minh của Đảng"
+            className="w-full h-full object-cover"
+          />
+        </div>
         <h3 className="text-xl font-bold text-primary mb-4">Văn minh</h3>
         <ul className="space-y-3">
           <li className="flex gap-3">

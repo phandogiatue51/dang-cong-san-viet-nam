@@ -3,8 +3,8 @@ import SectionWrapper from "./SectionWrapper";
 const PartyPeopleSection = () => (
   <SectionWrapper
     id="dang-dan"
-    title="Mối quan hệ Đảng – Nhân dân"
-    subtitle="Đảng là một bộ phận của dân tộc, không phải đứng trên xã hội."
+    title="IV. Mối Quan hệ giữa Đảng và Nhân dân"
+    subtitle="Hồ Chí Minh nhấn mạnh rằng Đảng là một bộ phận của dân tộc, không phải là người cai trị."
   >
     <div className="space-y-6">
       <blockquote className="text-center text-lg italic text-foreground font-medium">
@@ -13,31 +13,51 @@ const PartyPeopleSection = () => (
         Nó ở trong xã hội mà ra."
       </blockquote>
 
+      <div className="relative rounded-2xl overflow-hidden border border-border">
+        <img
+          src="/images/party-people-unity.svg"
+          alt="Đảng gắn bó với nhân dân"
+          className="w-full h-56 md:h-72 object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/35 to-transparent" />
+        <div className="absolute bottom-4 left-4 right-4">
+          <p className="text-primary-foreground font-semibold text-base md:text-lg">
+            Chính danh của Đảng được xây dựng từ niềm tin của nhân dân
+          </p>
+          <p className="text-primary-foreground/80 text-sm mt-1">
+            Dân tin, dân yêu, dân kính, dân phục là thước đo bền vững nhất.
+          </p>
+        </div>
+      </div>
+
       <div className="grid md:grid-cols-2 gap-4">
         <div className="bg-card rounded-xl p-6 border border-border">
-          <h4 className="font-semibold text-primary mb-3">Gắn bó máu thịt</h4>
+          <h4 className="font-semibold text-primary mb-3">Lãnh đạo là đầy tớ</h4>
           <p className="text-sm text-muted-foreground">
-            Đảng là một bộ phận của toàn thể dân tộc. Cán bộ là "đầy tớ" chứ không phải "quan cách mạng". Không phải dán lên trán chữ "cộng sản" là dân tin — phải làm cho dân tin bằng công tác hằng ngày.
+            Cán bộ là đầy tớ của nhân dân, không phải người tìm kiếm địa vị hay đặc quyền. Hồ Chí Minh cảnh báo nghiêm khắc về căn bệnh quan cách mạng.
           </p>
         </div>
         <div className="bg-card rounded-xl p-6 border border-border">
-          <h4 className="font-semibold text-primary mb-3">Sự ủy thác của quốc dân</h4>
+          <h4 className="font-semibold text-primary mb-3">Trách nhiệm trước quần chúng</h4>
           <p className="text-sm text-muted-foreground">
-            "Bao giờ đồng bào cho tôi lui, thì tôi rất vui lòng lui." Tính chính danh dựa trên: <strong>Dân tin, dân yêu, dân kính, dân phục.</strong>
+            Nếu Đảng không mang lại tự do và hạnh phúc thiết thực cho dân như ăn, mặc, học hành thì độc lập cũng không còn ý nghĩa.
           </p>
         </div>
       </div>
 
       <div className="bg-primary/5 rounded-xl p-6 border border-primary/20">
-        <h4 className="font-semibold text-primary mb-2">Lời hứa & Trách nhiệm</h4>
+        <h4 className="font-semibold text-primary mb-2">Sức mạnh của lòng tin nhân dân</h4>
         <p className="text-sm text-foreground mb-3">
-          Mục đích tối thượng: Giải phóng dân tộc, làm cho Tổ quốc giàu mạnh, đồng bào sung sướng.
+          Tính chính danh của Đảng dựa trên nền tảng Dân tin, dân yêu, dân kính, dân phục.
         </p>
         <blockquote className="text-sm italic text-muted-foreground border-l-2 border-primary/30 pl-3 mb-3">
           "Nếu nước độc lập mà dân không hưởng hạnh phúc tự do, thì độc lập cũng chẳng có nghĩa lý gì."
         </blockquote>
-        <p className="text-sm text-primary font-medium">
-          ⚠ Cảnh báo: Nếu Đảng hành xử như "ông quan cách mạng", nhân dân sẽ "đạp đổ" Đảng.
+        <blockquote className="text-sm italic text-primary font-medium border-l-2 border-primary/30 pl-3">
+          "Đảng không phải làm quan, sai khiến quần chúng mà phải làm đầy tớ cho quần chúng và phải làm cho ra trò, nếu không quần chúng sẽ đá đít."
+        </blockquote>
+        <p className="text-sm text-muted-foreground mt-3">
+          Cảnh báo này cho thấy mối quan hệ giữa Đảng và nhân dân là điều kiện sống còn, không chỉ là khẩu hiệu chính trị.
         </p>
       </div>
     </div>
